@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Vite's production mode swaps the dev fixture for an empty stub, so the sample
+# pipeline data in src/devMock.js never reaches the deployed bundle.
+[build.environment]
+  NODE_VERSION = "22"
